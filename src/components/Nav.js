@@ -1,10 +1,10 @@
 import React from 'react';
 import { VscArrowLeft } from 'react-icons/vsc';
 
-export const Nav = () => {
+export const Nav = ({ setIsNavOpen }) => {
   return (
     <nav>
-      <VscArrowLeft className="arrow" />
+      <VscArrowLeft className="back-btn" onClick={() => setIsNavOpen(false)} />
       <ul>
         <li>
           <a href="#" className="active">

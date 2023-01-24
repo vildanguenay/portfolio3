@@ -3,3 +3,67 @@
 *:after {
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: #2d7dff;
+}
+
+section {
+  padding: 2em;
+}
+
+nav {
+  position: fixed;
+  background: #2c2931;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.875em 5em 0.875em 4em;
+}
+
+nav ul li a:hover {
+  background: #413e47;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: -0.1em;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  display: flex;
+}
+
+.active {
+  background: var(--primary-color);
+}
+
+.back-btn {
+  margin: 3em 4em 2em;
+  color: aliceblue;
+}
