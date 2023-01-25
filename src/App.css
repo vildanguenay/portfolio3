@@ -12,15 +12,18 @@ section {
   padding: 2em;
 }
 
+.menu-btn {
+  cursor: pointer;
+}
+
 nav {
   position: fixed;
   background: #2c2931;
   z-index: 1;
-  left: 0;
+  right: 0;
   top: 0;
   height: 100vh;
   max-width: 300px;
-  transition: transform 0.3s;
 }
 
 nav ul {
@@ -63,7 +66,20 @@ header {
   background: var(--primary-color);
 }
 
+.active:hover {
+  background: #4497ff;
+}
+
 .back-btn {
+  cursor: pointer;
+  transition: transform 0.3s;
   margin: 3em 4em 2em;
   color: aliceblue;
+}
+
+.back-btn:hover {
+  transform: scaleX(1) translateX(6px);
+}
+
+@media only screen and (min-width: 1000px) {
 }
