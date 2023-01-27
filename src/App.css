@@ -24,6 +24,7 @@ nav {
   top: 0;
   height: 100vh;
   max-width: 300px;
+  transition: 3s ease-in;
 }
 
 nav ul {
@@ -41,6 +42,7 @@ nav ul li a {
   color: white;
   display: block;
   padding: 0.875em 5em 0.875em 4em;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -72,13 +74,13 @@ header {
 
 .back-btn {
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: 0.3s;
   margin: 3em 4em 2em;
   color: aliceblue;
 }
 
 .back-btn:hover {
-  transform: scaleX(1) translateX(6px);
+  width: 2.5rem;
 }
 
 @media only screen and (min-width: 1000px) {

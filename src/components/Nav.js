@@ -4,7 +4,11 @@ import { VscArrowRight } from 'react-icons/vsc';
 export const Nav = ({ setIsNavOpen }) => {
   return (
     <nav>
-      <VscArrowRight className="back-btn" onClick={() => setIsNavOpen(false)} />
+      <VscArrowRight
+        size={30}
+        className="back-btn"
+        onClick={() => setIsNavOpen(false)}
+      />
       <ul>
         <li>
           <a href="#" className="active">

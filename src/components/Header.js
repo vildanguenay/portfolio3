@@ -9,8 +9,12 @@ export const Header = () => {
   return (
     <header>
       <p className="logo">Logo</p>
-      <FiMenu className="menu-btn" onClick={() => setIsNavOpen(true)} />
-      {isNavOpen && <Nav setIsNavOpen={setIsNavOpen} />}
+      <FiMenu
+        size={30}
+        className="menu-btn"
+        onClick={() => setIsNavOpen(true)}
+      />
+      {isNavOpen && <Nav setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />}
     </header>
   );
 };
