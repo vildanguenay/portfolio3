@@ -14,7 +14,7 @@ export const Header = () => {
         className="menu-btn"
         onClick={() => setIsNavOpen(true)}
       />
-      {isNavOpen && <Nav setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />}
+      <Nav setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />
     </header>
   );
 };

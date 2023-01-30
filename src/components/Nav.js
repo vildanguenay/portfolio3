@@ -1,9 +1,9 @@
 import React from 'react';
 import { VscArrowRight } from 'react-icons/vsc';
 
-export const Nav = ({ setIsNavOpen }) => {
+export const Nav = ({ setIsNavOpen, isNavOpen }) => {
   return (
-    <nav>
+    <nav className={isNavOpen ? 'openNav' : null}>
       <VscArrowRight
         size={30}
         className="back-btn"
@@ -16,7 +16,7 @@ export const Nav = ({ setIsNavOpen }) => {
           </a>
         </li>
         <li>
-          <a href="#">My Stats</a>
+          <a href="#">MyStats</a>
         </li>
         <li>
           <a href="#">Members</a>

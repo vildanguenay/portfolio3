@@ -6,31 +6,48 @@
 
 :root {
   --primary-color: #2d7dff;
+  --secondary-color: green;
 }
 
 section {
   padding: 2em;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
 .menu-btn {
   cursor: pointer;
+  margin-right: 0.5em;
 }
 
 nav {
+  visibility: hidden;
   position: fixed;
   background: #2c2931;
-  z-index: 1;
   right: 0;
   top: 0;
   height: 100vh;
-  max-width: 300px;
-  transition: 3s ease-in;
+  width: 66%;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.openNav {
+  visibility: unset;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
+  margin-top: 7em;
 }
 
 nav ul li {
@@ -42,7 +59,6 @@ nav ul li a {
   color: white;
   display: block;
   padding: 0.875em 5em 0.875em 4em;
-  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -55,8 +71,7 @@ nav ul li a:hover {
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: -0.1em;
-  text-align: center;
-  width: 100%;
+  align-self: center;
   margin: 0;
 }
 
@@ -65,11 +80,8 @@ header {
 }
 
 .active {
-  background: var(--primary-color);
-}
-
-.active:hover {
-  background: #4497ff;
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 
 .back-btn {
@@ -77,11 +89,44 @@ header {
   transition: 0.3s;
   margin: 3em 4em 2em;
   color: aliceblue;
+  float: right;
 }
 
-.back-btn:hover {
-  width: 2.5rem;
-}
+@media only screen and (min-width: 500px) {
+  section {
+    padding: 0;
+    margin: 0;
+  }
 
-@media only screen and (min-width: 1000px) {
+  .menu-btn,
+  .back-btn {
+    display: none;
+  }
+
+  nav {
+    visibility: unset;
+    background: none;
+    position: unset;
+    height: auto;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  nav ul {
+    display: flex;
+    margin-top: auto;
+    width: auto;
+    float: right;
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: #2d7dff;
+    padding: 1em;
+    display: block;
+  }
+
+  .logo {
+    margin-left: 0.8em;
+  }
 }
