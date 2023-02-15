@@ -21,7 +21,6 @@ header {
 
 .menu-btn {
   cursor: pointer;
-  margin-right: 0.5em;
 }
 
 nav {
@@ -41,6 +40,7 @@ nav {
   visibility: unset;
   opacity: 1;
   transform: translateX(0);
+  z-index: 1000;
 }
 
 nav ul {
