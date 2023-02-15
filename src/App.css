@@ -92,6 +92,20 @@ header {
   float: right;
 }
 
+.carouselCaption {
+  position: fixed !important;
+  bottom: unset !important;
+  color: #8e56eb !important;
+}
+
+.carouselImg {
+  height: inherit;
+}
+
+.carouselItem {
+  height: 15em;
+}
+
 @media only screen and (min-width: 500px) {
   section {
     padding: 0;
