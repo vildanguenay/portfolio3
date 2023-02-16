@@ -93,16 +93,10 @@ header {
 }
 
 .carouselCaption {
-  position: fixed !important;
-  bottom: unset !important;
   color: #8e56eb !important;
 }
 
 .carouselImg {
-  height: inherit;
-}
-
-.carouselItem {
   height: 15em;
 }
 
