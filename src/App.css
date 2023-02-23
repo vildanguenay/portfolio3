@@ -40,7 +40,7 @@ nav {
   visibility: unset;
   opacity: 1;
   transform: translateX(0);
-  z-index: 1000;
+  z-index: 10000;
 }
 
 nav ul {
@@ -92,12 +92,28 @@ header {
   float: right;
 }
 
+.carouselItem {
+  display: flex;
+  justify-content: center;
+}
+
 .carouselCaption {
   color: #8e56eb !important;
+  position: absolute;
+  bottom: 2em;
 }
 
 .carouselImg {
-  height: 15em;
+  height: 12em;
+}
+
+.technImg {
+  height: 8em;
+}
+
+.technCaption {
+  text-align: center;
+  margin-top: 1.5em;
 }
 
 @media only screen and (min-width: 500px) {

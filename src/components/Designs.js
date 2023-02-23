@@ -1,11 +1,10 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Netflix from '.././img/netflix.png';
-import Webshop from '.././img/webshop.png';
-import Website from '.././img/website.png';
 
-export const LiveProjects = () => {
+import Webshop from '.././img/webshop.png';
+
+export const Designs = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -27,30 +26,32 @@ export const LiveProjects = () => {
 
   const itemData = [
     {
-      img: Netflix,
-      title: 'Netflix',
+      img: Webshop,
+      title: 'Figma',
     },
     {
       img: Webshop,
-      title: 'Webshop',
+      title: 'SASS',
     },
     {
-      img: Website,
-      title: 'First Personal Website',
+      img: Webshop,
+      title: 'CSS',
     },
   ];
+
   return (
-    <Carousel interval={null} responsive={responsive} infinite={true}>
+    <Carousel responsive={responsive} infinite={true} showDots={true}>
       {itemData.map((item) => (
-        <div className="carouselItem">
+        <div>
+          <div className="technCaption">
+            <h5>{item.title}</h5>
+          </div>
+
           <img
-            className="d-block w-100 carouselImg"
+            className="d-block w-100 technImg"
             src={item.img}
             alt="First slide"
           />
-          <div className="carouselCaption">
-            <button>{item.title}</button>
-          </div>
         </div>
       ))}
     </Carousel>
