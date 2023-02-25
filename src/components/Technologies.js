@@ -21,7 +21,7 @@ export const Technologies = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -76,24 +76,26 @@ export const Technologies = () => {
     },
   ];
   return (
-    <Carousel
-      responsive={responsive}
-      interval={null}
-      infinite={true}
-      variant="dark"
-    >
-      {itemData.map((item) => (
-        <div>
-          <img
-            className="d-block w-100 technImg"
-            src={item.img}
-            alt="First slide"
-          />
-          <div className="technCaption">
-            <h5>{item.title}</h5>
+    <section id="technologies">
+      <Carousel
+        responsive={responsive}
+        interval={null}
+        infinite={true}
+        variant="dark"
+      >
+        {itemData.map((item) => (
+          <div>
+            <img
+              className="d-block w-100 technImg"
+              src={item.img}
+              alt="First slide"
+            />
+            <div className="technCaption">
+              <h5>{item.title}</h5>
+            </div>
           </div>
-        </div>
-      ))}
-    </Carousel>
+        ))}
+      </Carousel>
+    </section>
   );
 };

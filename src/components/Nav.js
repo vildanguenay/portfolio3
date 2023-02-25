@@ -11,21 +11,21 @@ export const Nav = ({ setIsNavOpen, isNavOpen }) => {
       />
       <ul>
         <li>
-          <a href="#" className="active">
+          <a href="#home" className="active">
             Home
           </a>
         </li>
         <li>
-          <a href="#">MyStats</a>
+          <a href="#projects">Live Projects</a>
         </li>
         <li>
-          <a href="#">Members</a>
+          <a href="#designs">Web Designs</a>
         </li>
         <li>
-          <a href="#">Settings</a>
+          <a href="#about">About Me</a>
         </li>
         <li>
-          <a href="#">Help</a>
+          <a href="#technologies">Technologies</a>
         </li>
       </ul>
     </nav>

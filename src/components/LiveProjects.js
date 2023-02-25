@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Netflix from '.././img/netflix.png';
 import Webshop from '.././img/webshop.png';
 import Website from '.././img/website.png';
+import Website2 from '.././img/portfolio2.png';
 
 export const LiveProjects = () => {
   const responsive = {
@@ -20,7 +21,7 @@ export const LiveProjects = () => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 500, min: 0 },
       items: 1,
     },
   };
@@ -29,30 +30,47 @@ export const LiveProjects = () => {
     {
       img: Netflix,
       title: 'Netflix',
+      link: 'https://vildanguenay.github.io/netflix-clone/#/browse',
     },
     {
       img: Webshop,
       title: 'Webshop',
+      link: 'https://vildanguenay.github.io/webshop/',
+    },
+    {
+      img: Website2,
+      title: 'Second Personal Website (idle)',
+      link: 'https://vildanguenay.github.io/portfolio2/',
     },
     {
       img: Website,
-      title: 'First Personal Website',
+      title: 'First Personal Website (idle)',
+      link: 'https://vildanguenay.github.io/',
     },
   ];
   return (
-    <Carousel interval={null} responsive={responsive} infinite={true}>
-      {itemData.map((item) => (
-        <div className="carouselItem">
-          <img
-            className="d-block w-100 carouselImg"
-            src={item.img}
-            alt="First slide"
-          />
-          <div className="carouselCaption">
-            <button>{item.title}</button>
+    <section id="projects">
+      <Carousel
+        interval={null}
+        responsive={responsive}
+        removeArrowOnDeviceType={['tablet', 'mobile']}
+        infinite={true}
+      >
+        {itemData.map((item) => (
+          <div className="carouselItem">
+            <img
+              className="d-block w-100 carouselImg"
+              src={item.img}
+              alt="First slide"
+            />
+            <div className="carouselCaption">
+              <button>
+                <a href={item.link}>{item.title}</a>
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
-    </Carousel>
+        ))}
+      </Carousel>
+    </section>
   );
 };
