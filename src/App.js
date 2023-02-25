@@ -4,15 +4,16 @@ import { Header } from './components/Header';
 import { LiveProjects } from './components/LiveProjects';
 import { Technologies } from './components/Technologies';
 import { Designs } from './components/Designs';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <section>
+    <Fragment>
       <Header />
       <LiveProjects />
       <Designs />
       <Technologies />
-    </section>
+    </Fragment>
   );
 }
 

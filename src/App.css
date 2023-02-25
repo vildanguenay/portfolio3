@@ -59,10 +59,15 @@ nav ul li a {
   color: rgb(247, 28, 28);
   display: block;
   padding: 0.875em 5em 0.875em 4em;
+  white-space: nowrap;
 }
 
 nav ul li a:hover {
   background: #413e47;
+}
+
+.active {
+  color: green;
 }
 
 .logo {
@@ -153,6 +158,11 @@ header {
     color: #2d7dff;
     padding: 1em;
     display: block;
+  }
+
+  nav ul li a:hover {
+    background: none;
+    color: red;
   }
 
   .logo {

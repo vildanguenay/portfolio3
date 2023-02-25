@@ -1,7 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import { VscArrowRight } from 'react-icons/vsc';
 
 export const Nav = ({ setIsNavOpen, isNavOpen }) => {
+  const [isActive, setIsActive] = useState('');
+
+  const handleClick = (value) => {
+    setIsActive(value);
+    console.log(value);
+  };
+
   return (
     <nav className={isNavOpen ? 'openNav' : null}>
       <VscArrowRight
@@ -11,21 +19,49 @@ export const Nav = ({ setIsNavOpen, isNavOpen }) => {
       />
       <ul>
         <li>
-          <a href="#home" className="active">
+          <a
+            href="#home"
+            className={isActive === 'home' && 'active'}
+            onClick={() => handleClick('home')}
+          >
             Home
           </a>
         </li>
         <li>
-          <a href="#projects">Live Projects</a>
+          <a
+            href="#projects"
+            className={isActive === 'projects' && 'active'}
+            onClick={() => handleClick('projects')}
+          >
+            Live Projects
+          </a>
         </li>
         <li>
-          <a href="#designs">Web Designs</a>
+          <a
+            href="#designs"
+            className={isActive === 'designs' && 'active'}
+            onClick={() => handleClick('designs')}
+          >
+            Web Designs
+          </a>
         </li>
         <li>
-          <a href="#about">About Me</a>
+          <a
+            href="#about"
+            className={isActive === 'about' && 'active'}
+            onClick={() => handleClick('about')}
+          >
+            About Me
+          </a>
         </li>
         <li>
-          <a href="#technologies">Technologies</a>
+          <a
+            href="#technologies"
+            className={isActive === 'technologies' && 'active'}
+            onClick={() => handleClick('technologies')}
+          >
+            Technologies
+          </a>
         </li>
       </ul>
     </nav>
