@@ -2,8 +2,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from './components/Header';
 import { LiveProjects } from './components/LiveProjects';
-import { Technologies } from './components/Technologies';
 import { Designs } from './components/Designs';
+import { About } from './components/About';
+import { Technologies } from './components/Technologies';
 import { Fragment } from 'react';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <LiveProjects />
       <Designs />
+      <About />
       <Technologies />
     </Fragment>
   );
