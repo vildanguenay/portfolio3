@@ -1,15 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
 import { VscArrowRight } from 'react-icons/vsc';
 
 export const NavBar = ({ setIsNavOpen, isNavOpen }) => {
-  const [isActive, setIsActive] = useState('');
-
-  const handleClick = (value) => {
-    setIsActive(value);
-    console.log(value);
-  };
-
   return (
     <nav className={isNavOpen ? 'openNav' : null}>
       <VscArrowRight
@@ -19,29 +11,19 @@ export const NavBar = ({ setIsNavOpen, isNavOpen }) => {
       />
       <ul>
         <li>
-          <a href="#home" onClick={() => handleClick('home')}>
-            Home
-          </a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#projects" onClick={() => handleClick('projects')}>
-            Live Projects
-          </a>
+          <a href="#projects">Live Projects</a>
         </li>
         <li>
-          <a href="#designs" onClick={() => handleClick('designs')}>
-            Web Designs
-          </a>
+          <a href="#designs">Web Designs</a>
         </li>
         <li>
-          <a href="#about" onClick={() => handleClick('about')}>
-            About Me
-          </a>
+          <a href="#about">About Me</a>
         </li>
         <li>
-          <a href="#technologies" onClick={() => handleClick('technologies')}>
-            Technologies
-          </a>
+          <a href="#technologies">Technologies</a>
         </li>
       </ul>
     </nav>
