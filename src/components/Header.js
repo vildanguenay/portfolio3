@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Nav } from './Nav';
+import { NavBar } from './NavBar';
 import { FiMenu } from 'react-icons/fi';
 
 export const Header = () => {
@@ -14,7 +14,7 @@ export const Header = () => {
         className="menu-btn"
         onClick={() => setIsNavOpen(true)}
       />
-      <Nav setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />
+      <NavBar setIsNavOpen={setIsNavOpen} isNavOpen={isNavOpen} />
     </header>
   );
 };

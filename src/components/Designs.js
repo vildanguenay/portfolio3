@@ -25,7 +25,7 @@ export const Designs = () => {
     mobile: {
       breakpoint: { max: 500, min: 0 },
       items: 1,
-      // partialVisibilityGutter: 30,
+      partialVisibilityGutter: -0.2,
     },
   };
 
@@ -64,9 +64,9 @@ export const Designs = () => {
         removeArrowOnDeviceType={['tablet', 'mobile']}
       >
         {itemData.map((item) => (
-          <div>
+          <div className="designsCon">
             <div className="designsCaption">
-              <h5>{item.title}</h5>
+              <h1>{item.title}</h1>
             </div>
             <div className="designsImg">
               <img className="d-block w-100" src={item.img} alt="First slide" />

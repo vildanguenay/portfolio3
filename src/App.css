@@ -107,6 +107,19 @@ header {
   height: 12em;
 }
 
+.react-multi-carousel-track {
+  align-items: center;
+}
+
+.designsCaption {
+  margin-bottom: 1.5em;
+}
+
+.designsCaption h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
 .designsImg {
   display: flex;
   min-height: 28em;
