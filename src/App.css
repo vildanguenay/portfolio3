@@ -139,6 +139,17 @@ header {
   position: unset !important;
 }
 
+.nav-link,
+.nav-tabs,
+.nav-fill {
+  border: none !important;
+  border-radius: unset !important;
+}
+
+.nav-link.active {
+  background-color: green !important;
+}
+
 @media only screen and (min-width: 500px) {
   section {
     padding: 0;
