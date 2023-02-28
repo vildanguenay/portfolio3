@@ -4,23 +4,107 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary-color: #2d7dff;
   --secondary-color: green;
 }
 
-section {
-  padding: 2em;
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.gymImg {
+  opacity: 0.8;
+}
+
+/* #home {
+  background: url('./img/gymblackwhite.jpg') no-repeat center fixed;
+  background-size: cover;
+} */
+
+.homeTxt {
+  position: absolute;
+  bottom: 20em;
+  background: rgba(97, 88, 88, 0.43);
+  /* backdrop-filter: blur(1px); */
+}
+
+.homeTxt ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 5em;
+}
+
+.homeBtn {
+  background-color: #000000;
+  border-radius: 23px;
+  padding: 1em 1.5em;
+  border: none;
+  display: inline-block;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.homeBtn a:hover {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.homeTxt ul li {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.text1 {
+  color: #ebd380;
+}
+
+.text2 {
+  color: #c280eb;
+}
+
+.text3 {
+  color: #eb8093;
+}
+
+.text4 {
+  color: #8280eb;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  padding: 0.5em;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  align-items: center;
 }
 
 .menu-btn {
   cursor: pointer;
+  color: peru;
 }
 
 nav {
@@ -34,13 +118,13 @@ nav {
   transform: translateX(50%);
   opacity: 0;
   transition: all 0.3s;
+  z-index: 10000;
 }
 
 .openNav {
   visibility: unset;
   opacity: 1;
   transform: translateX(0);
-  z-index: 10000;
 }
 
 nav ul {
@@ -48,6 +132,8 @@ nav ul {
   padding: 0;
   width: 100%;
   margin-top: 7em;
+  position: fixed;
+  height: 100vh;
 }
 
 nav ul li {
@@ -60,6 +146,7 @@ nav ul li a {
   display: block;
   padding: 0.875em 5em 0.875em 4em;
   white-space: nowrap;
+  display: block;
 }
 
 nav ul li a:hover {

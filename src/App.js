@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from './components/Header';
+import { Home } from './components/Home';
 import { LiveProjects } from './components/LiveProjects';
 import { Designs } from './components/Designs';
 import { About } from './components/About';
@@ -10,7 +10,7 @@ import { Fragment } from 'react';
 function App() {
   return (
     <Fragment>
-      <Header />
+      <Home />
       <LiveProjects />
       <Designs />
       <About />

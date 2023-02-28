@@ -32,22 +32,24 @@ export const About = () => {
     },
   ];
   return (
-    <Tabs
-      defaultActiveKey="profile"
-      id="fill-tab-example"
-      className="mb-3"
-      fill
-    >
-      {itemData.map((item) => (
-        <Tab eventKey={item.eventkey} title={item.title}>
-          <Card>
-            <Card.Img variant="top" src={item.img} />
-            <Card.Body>
-              <Card.Text>{item.text}</Card.Text>
-            </Card.Body>
-          </Card>
-        </Tab>
-      ))}
-    </Tabs>
+    <section id="about">
+      <Tabs
+        defaultActiveKey="profile"
+        id="fill-tab-example"
+        className="mb-3"
+        fill
+      >
+        {itemData.map((item) => (
+          <Tab eventKey={item.eventkey} title={item.title}>
+            <Card>
+              <Card.Img variant="top" src={item.img} />
+              <Card.Body>
+                <Card.Text>{item.text}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Tab>
+        ))}
+      </Tabs>{' '}
+    </section>
   );
 };
