@@ -50,27 +50,30 @@ export const LiveProjects = () => {
   ];
   return (
     <section id="projects">
-      <Carousel
-        interval={null}
-        responsive={responsive}
-        removeArrowOnDeviceType={['tablet', 'mobile']}
-        infinite={true}
-      >
-        {itemData.map((item) => (
-          <div className="carouselItem">
-            <img
-              className="d-block w-100 carouselImg"
-              src={item.img}
-              alt="First slide"
-            />
-            <div className="carouselCaption">
-              <button>
-                <a href={item.link}>{item.title}</a>
-              </button>
+      <div className="projectsCon">
+        <h1>LIVE PROJECTS</h1>
+        <Carousel
+          interval={null}
+          responsive={responsive}
+          removeArrowOnDeviceType={['tablet', 'mobile']}
+          infinite={true}
+        >
+          {itemData.map((item) => (
+            <div className="carouselItem">
+              <img
+                className="d-block w-100 carouselImg"
+                src={item.img}
+                alt="First slide"
+              />
+              <div className="carouselCaption">
+                <button>
+                  <a href={item.link}>{item.title}</a>
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
+          ))}
+        </Carousel>
+      </div>
     </section>
   );
 };

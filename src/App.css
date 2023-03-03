@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-  --primary-color: #2d7dff;
+  --primary-color: #2f5ca6;
   --secondary-color: green;
 }
 
@@ -32,16 +32,21 @@ img {
   opacity: 0.8;
 }
 
-/* #home {
-  background: url('./img/gymblackwhite.jpg') no-repeat center fixed;
+#home {
+  background: url('./img/gymblackwhite.jpg') no-repeat center;
   background-size: cover;
-} */
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+}
 
 .homeTxt {
   position: absolute;
   bottom: 20em;
   background: rgba(97, 88, 88, 0.43);
   /* backdrop-filter: blur(1px); */
+  left: 0;
+  margin-bottom: 1em;
 }
 
 .homeTxt ul {
@@ -52,23 +57,33 @@ img {
 .btnContainer {
   display: flex;
   justify-content: center;
-  position: relative;
-  bottom: 5em;
+  position: absolute;
+  bottom: 13em;
+  margin: 0 auto;
 }
 
 .homeBtn {
-  background-color: #000000;
-  border-radius: 23px;
+  background-color: #597e62;
+  border-radius: 53px;
   padding: 1em 1.5em;
   border: none;
   display: inline-block;
-  color: aliceblue;
+  color: #cfcfcf;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.homeBtn a:hover {
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
+.homeBtn svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.homeBtn:hover {
+  opacity: 0.8;
+  color: #cfcfcf;
+}
+
+.homeBtn:hover svg {
+  margin-left: 0.2em;
 }
 
 .homeTxt ul li {
@@ -100,6 +115,10 @@ header {
   width: 100%;
   z-index: 10000;
   align-items: center;
+}
+
+.scrolled {
+  background-color: green;
 }
 
 .menu-btn {
@@ -142,7 +161,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(247, 28, 28);
+  color: peru;
   display: block;
   padding: 0.875em 5em 0.875em 4em;
   white-space: nowrap;
@@ -179,6 +198,16 @@ header {
   float: right;
 }
 
+#projects {
+  padding: 7em 1.5em;
+  background-color: black;
+}
+
+.projectsCon {
+  padding: 2em;
+  background-color: grey;
+}
+
 .carouselItem {
   display: flex;
   justify-content: center;
@@ -191,7 +220,7 @@ header {
 }
 
 .carouselImg {
-  height: 12em;
+  height: 50vw;
 }
 
 .react-multi-carousel-track {
