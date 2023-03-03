@@ -172,10 +172,6 @@ nav ul li a:hover {
   background: #413e47;
 }
 
-.active {
-  color: green;
-}
-
 .logo {
   color: var(--primary-color);
   font-weight: 800;
