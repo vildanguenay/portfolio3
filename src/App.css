@@ -289,7 +289,7 @@ header {
 }
 
 .designsCaption h1 {
-  font-size: 2.3em;
+  font-size: 1.6em;
   text-align: center;
 }
 
@@ -298,13 +298,18 @@ header {
   align-items: center;
 }
 
+#designs .react-multi-carousel-dot-list {
+  margin-top: 1em;
+}
+
 .technImg {
   height: 11em;
 }
 
 .technCaption {
   text-align: center;
-  margin-top: 1.5em;
+  margin-top: 2em;
+  color: white;
 }
 
 .react-multi-carousel-dot-list {
@@ -329,15 +334,55 @@ header {
 }
 
 #about {
-  height: 170vw;
+  height: 220vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #202124;
 }
 
 .aboutHeader {
   text-align: center;
   margin-bottom: 1em;
+  font-size: 4.5em;
+  line-height: 1;
+  color: #eb8093;
+}
+
+#about .tab-content {
+  height: 120vw;
+}
+
+#about .nav-link {
+  color: white;
+}
+
+#about .nav-link.active {
+  background-color: unset !important;
+  color: #eb8093;
+}
+
+#about .card {
+  background-color: #383631;
+}
+
+#about .card-text {
+  color: white;
+}
+
+#technologies {
+  height: 150vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #383631;
+}
+
+.techsHeader {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 4.5em;
+  line-height: 1;
 }
 
 @media only screen and (min-width: 500px) {

@@ -10,25 +10,29 @@ export const About = () => {
       img: Webshop,
       eventkey: 'home',
       title: 'Storytelling',
-      text: 'loreeeeeeeeeeeeeeeeeeeem',
+      subTitle: 'Presenting',
+      text: 'I enjoy presenting information to people.',
     },
     {
       img: Webshop,
       eventkey: 'profile',
       title: 'Communication',
-      text: 'loreeeeeeeeeeeeeeeeeeeem',
+      subTitle: 'Journalistic Writing',
+      text: "During my bachelor's programme Transcultural Communication creating different text types - mainly journalistic - in three different languages was the main agenda. We have acquired a high level of language and text competence as well as related cultural studies.",
     },
     {
       img: Webshop,
       eventkey: 'longer-tab',
       title: 'Mediation',
-      text: 'loreeeeeeeeeeeeeeeeeeeem',
+      subTitle: '(International) Conflict Resolution',
+      text: "During my masters' programme International Development I developed a firm interest in international peace-keeping. The aim is to remove tensions between parties or states maintaining a consistent level of peaceful and respectful communication in the pursuit of each party's goals.",
     },
     {
       img: Webshop,
       eventkey: 'contact',
       title: 'Web Development & Design',
-      text: 'loreeeeeeeeeeeeeeeeeeeem',
+      subTitle: '',
+      text: 'I also enjoy creating and designing websites - check out my live projects and designs section.',
     },
   ];
   return (

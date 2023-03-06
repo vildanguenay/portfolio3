@@ -5,6 +5,7 @@ import Netflix from '.././img/netflix.png';
 import Webshop from '.././img/webshop.png';
 import Website from '.././img/website.png';
 import Website2 from '.././img/portfolio2.png';
+import Forest from '.././img/ScreenshotForest.png';
 
 export const LiveProjects = () => {
   const responsive = {
@@ -37,6 +38,11 @@ export const LiveProjects = () => {
       img: Webshop,
       title: 'Webshop',
       link: 'https://vildanguenay.github.io/webshop/',
+    },
+    {
+      img: Forest,
+      title: 'Room Rentals',
+      link: 'https://vildanguenay.github.io/forest/',
     },
     {
       img: Website2,

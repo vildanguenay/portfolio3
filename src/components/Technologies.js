@@ -25,7 +25,7 @@ export const Technologies = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -77,6 +77,7 @@ export const Technologies = () => {
   ];
   return (
     <section id="technologies">
+      <h1 className="techsHeader">Technologies</h1>
       <Carousel
         responsive={responsive}
         interval={null}

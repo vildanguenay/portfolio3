@@ -32,23 +32,23 @@ export const Designs = () => {
   const itemData = [
     {
       img: Coast,
-      title: 'Activities',
+      title: 'Outdoor Activities',
     },
     {
       img: Tea,
-      title: 'Tea Shop',
+      title: 'Tea Shop Landing Page',
     },
     {
       img: WSIMG,
-      title: 'The Power of White Space & Image',
+      title: 'Fundamentals: The Power of White Space & Image',
     },
     {
       img: Scale,
-      title: 'The Power of White Space & Scale',
+      title: 'Fundamentals: The Power of White Space & Scale',
     },
     {
       img: WSColor,
-      title: 'The Power of White Space & Color',
+      title: 'Fundamentals: The Power of White Space & Color',
     },
   ];
 
