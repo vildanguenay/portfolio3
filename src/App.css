@@ -15,6 +15,12 @@ body {
   --secondary-color: green;
 }
 
+section {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+
 a {
   text-decoration: none;
 }
@@ -225,10 +231,10 @@ header {
 
 .designsHeader {
   text-align: center;
-  margin-bottom: 1em;
   font-size: 4.5em;
   line-height: 1;
   color: #ebd380;
+  margin-bottom: 1em;
 }
 
 .carouselItem {
@@ -291,6 +297,9 @@ header {
 .designsCaption h1 {
   font-size: 1.6em;
   text-align: center;
+  margin-bottom: 0.8em;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .designsImg {
@@ -329,16 +338,17 @@ header {
 
 #designs {
   padding-bottom: 7em;
-  padding-top: 5em;
+  padding-top: 8em;
   background-color: #383631;
 }
 
 #about {
-  height: 220vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #202124;
+  padding-top: 6em;
+  padding-bottom: 7em;
 }
 
 .aboutHeader {
@@ -350,16 +360,26 @@ header {
 }
 
 #about .tab-content {
-  height: 120vw;
 }
 
 #about .nav-link {
   color: white;
 }
 
+#about .nav-item {
+  background-color: #0f0f0f;
+  border-radius: 50px;
+  flex: none;
+  margin-bottom: 0.7em;
+}
+
 #about .nav-link.active {
   background-color: unset !important;
   color: #eb8093;
+}
+
+#about .nav-tabs {
+  justify-content: space-evenly;
 }
 
 #about .card {
@@ -371,18 +391,34 @@ header {
 }
 
 #technologies {
-  height: 150vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #383631;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 6em;
+}
+
+.techsCon {
+  padding-top: 5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: #202124;
+  border-radius: 50px;
+  margin-top: 4.5em;
+  margin-bottom: 4em;
 }
 
 .techsHeader {
   text-align: center;
-  margin-bottom: 2em;
   font-size: 4.5em;
   line-height: 1;
+  color: white;
+}
+
+#technologies .react-multi-carousel-list {
+  margin-bottom: 2em;
 }
 
 @media only screen and (min-width: 500px) {

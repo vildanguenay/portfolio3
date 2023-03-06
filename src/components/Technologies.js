@@ -78,25 +78,28 @@ export const Technologies = () => {
   return (
     <section id="technologies">
       <h1 className="techsHeader">Technologies</h1>
-      <Carousel
-        responsive={responsive}
-        interval={null}
-        infinite={true}
-        variant="dark"
-      >
-        {itemData.map((item) => (
-          <div>
-            <img
-              className="d-block w-100 technImg"
-              src={item.img}
-              alt="First slide"
-            />
-            <div className="technCaption">
-              <h5>{item.title}</h5>
+
+      <div className="techsCon">
+        <Carousel
+          responsive={responsive}
+          interval={null}
+          infinite={true}
+          variant="dark"
+        >
+          {itemData.map((item) => (
+            <div>
+              <img
+                className="d-block w-100 technImg"
+                src={item.img}
+                alt="First slide"
+              />
+              <div className="technCaption">
+                <h5>{item.title}</h5>
+              </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
+          ))}
+        </Carousel>
+      </div>
     </section>
   );
 };
