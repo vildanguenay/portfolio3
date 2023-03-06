@@ -172,10 +172,10 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: peru;
-  display: block;
-  padding: 0.875em 5em 0.875em 4em;
+  padding: 0.875em 5em 0.875em 1.5em;
   white-space: nowrap;
   display: block;
+  font-size: 1.8em;
 }
 
 .active {
@@ -185,6 +185,17 @@ nav ul li a {
 nav ul li a:hover {
   background: #413e47;
   color: peru;
+}
+
+.socialsNav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.socialsNav svg {
+  fill: white;
+  font-size: 25px;
 }
 
 .logo {
