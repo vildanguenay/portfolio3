@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+#root {
+  background-color: #383631;
+}
+
 :root {
   --primary-color: #2f5ca6;
   --secondary-color: green;
@@ -394,10 +398,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #383631;
+  background-color: #ebd380;
   padding-right: 1em;
   padding-left: 1em;
-  padding-top: 6em;
+  padding-top: 3.4em;
+  border-radius: 80px;
+  margin-top: 6em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .techsCon {
@@ -406,8 +414,10 @@ header {
   padding-left: 1em;
   background-color: #202124;
   border-radius: 50px;
-  margin-top: 4.5em;
+  margin-top: 3.4em;
   margin-bottom: 4em;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
 .techsHeader {
@@ -419,6 +429,38 @@ header {
 
 #technologies .react-multi-carousel-list {
   margin-bottom: 2em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0;
+  margin-top: 3em;
+}
+
+.socialIcons svg {
+  fill: white;
+  margin: 1em 0.5em;
+  font-size: 30px;
+}
+
+.socialIcons a:hover svg {
+  opacity: 0.5;
+}
+
+.footerLink {
+  color: white;
+}
+
+.footerLink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer p {
+  color: white;
 }
 
 @media only screen and (min-width: 500px) {

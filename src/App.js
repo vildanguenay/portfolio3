@@ -5,6 +5,7 @@ import { LiveProjects } from './components/LiveProjects';
 import { Designs } from './components/Designs';
 import { About } from './components/About';
 import { Technologies } from './components/Technologies';
+import { Footer } from './components/Footer';
 import { Fragment } from 'react';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Designs />
       <About />
       <Technologies />
+      <Footer />
     </Fragment>
   );
 }
