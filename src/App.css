@@ -168,8 +168,13 @@ nav ul li a {
   display: block;
 }
 
+.active {
+  background: #413e47;
+}
+
 nav ul li a:hover {
   background: #413e47;
+  color: peru;
 }
 
 .logo {
@@ -200,8 +205,30 @@ header {
 }
 
 .projectsCon {
-  padding: 2em;
-  background-color: grey;
+  background-color: #383631;
+  height: 120vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  padding-top: 0;
+}
+
+.projectsCon h1 {
+  align-self: center;
+  font-size: 5em;
+  margin-bottom: 1rem;
+  width: 100%;
+  word-wrap: break-word;
+  line-height: 0.8;
+}
+
+.designsHeader {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 4.5em;
+  line-height: 1;
+  color: #ebd380;
 }
 
 .carouselItem {
@@ -210,13 +237,47 @@ header {
 }
 
 .carouselCaption {
-  color: #8e56eb !important;
   position: absolute;
-  bottom: 2em;
+  bottom: 0;
+  background: rgba(97, 88, 88, 0.8);
+  width: 100%;
+  border-radius: 0% 0% 29px 29px;
+}
+
+.carouselCaption h1 {
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0.6em 0;
+}
+
+.carouselCaption button {
+  border-radius: 55px;
+  background-color: #8b6767;
+  padding: 1em 1.5em;
+  border: none;
+}
+
+.carouselCaption button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.carouselCaption button:hover a {
+  text-decoration: none;
+}
+
+.carouselCaption button a {
+  color: white;
+  text-underline-offset: 3px;
+  font-weight: 500;
 }
 
 .carouselImg {
   height: 50vw;
+  border-radius: 30px;
+  border: none;
 }
 
 .react-multi-carousel-track {
@@ -224,17 +285,16 @@ header {
 }
 
 .designsCaption {
-  margin-bottom: 1.5em;
+  color: white;
 }
 
 .designsCaption h1 {
-  font-size: 3em;
+  font-size: 2.3em;
   text-align: center;
 }
 
 .designsImg {
   display: flex;
-  min-height: 28em;
   align-items: center;
 }
 
@@ -260,6 +320,24 @@ header {
 
 .nav-link.active {
   background-color: green !important;
+}
+
+#designs {
+  padding-bottom: 7em;
+  padding-top: 5em;
+  background-color: #383631;
+}
+
+#about {
+  height: 170vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 500px) {

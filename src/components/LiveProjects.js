@@ -10,26 +10,27 @@ export const LiveProjects = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 1,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
-      breakpoint: { max: 500, min: 0 },
+      breakpoint: { max: 800, min: 0 },
       items: 1,
+      partialVisibilityGutter: 20,
     },
   };
 
   const itemData = [
     {
       img: Netflix,
-      title: 'Netflix',
+      title: 'Netflix Clone',
       link: 'https://vildanguenay.github.io/netflix-clone/#/browse',
     },
     {
@@ -39,12 +40,12 @@ export const LiveProjects = () => {
     },
     {
       img: Website2,
-      title: 'Second Personal Website (idle)',
+      title: '2nd Personal Website (idle)',
       link: 'https://vildanguenay.github.io/portfolio2/',
     },
     {
       img: Website,
-      title: 'First Personal Website (idle)',
+      title: '1st Personal Website (idle)',
       link: 'https://vildanguenay.github.io/',
     },
   ];
@@ -55,22 +56,23 @@ export const LiveProjects = () => {
         <Carousel
           interval={null}
           responsive={responsive}
+          partialVisible={true}
           removeArrowOnDeviceType={['tablet', 'mobile']}
           infinite={true}
         >
           {itemData.map((item) => (
-            <div className="carouselItem">
-              <img
-                className="d-block w-100 carouselImg"
-                src={item.img}
-                alt="First slide"
-              />
-              <div className="carouselCaption">
-                <button>
-                  <a href={item.link}>{item.title}</a>
-                </button>
+            <a href={item.link}>
+              <div className="carouselItem">
+                <img
+                  className="d-block w-100 carouselImg"
+                  src={item.img}
+                  alt="First slide"
+                />
+                <div className="carouselCaption">
+                  <h1>{item.title}</h1>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </Carousel>
       </div>

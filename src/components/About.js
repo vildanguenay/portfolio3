@@ -33,6 +33,7 @@ export const About = () => {
   ];
   return (
     <section id="about">
+      <h1 className="aboutHeader">About Me</h1>
       <Tabs
         defaultActiveKey="profile"
         id="fill-tab-example"

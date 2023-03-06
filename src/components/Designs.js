@@ -12,7 +12,7 @@ export const Designs = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 2,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -25,7 +25,7 @@ export const Designs = () => {
     mobile: {
       breakpoint: { max: 500, min: 0 },
       items: 1,
-      partialVisibilityGutter: -0.2,
+      // partialVisibilityGutter: -0.2,
     },
   };
 
@@ -54,6 +54,7 @@ export const Designs = () => {
 
   return (
     <section id="designs">
+      <h1 className="designsHeader">Web Designs</h1>
       <Carousel
         responsive={responsive}
         infinite={true}
