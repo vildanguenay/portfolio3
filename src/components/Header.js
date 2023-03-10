@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <header className={scrolled ? 'scrolled' : ''}>
-      <p className="logo">Logo</p>
+      {/* <p className="logo">Logo</p> */}
       <FiMenu
         size={30}
         className="menu-btn"

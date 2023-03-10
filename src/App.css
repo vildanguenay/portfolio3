@@ -255,7 +255,6 @@ header {
   font-size: 3.5em;
   line-height: 1;
   color: #ebd380;
-  margin-bottom: 1em;
 }
 
 .carouselItem {
@@ -401,7 +400,6 @@ header {
 
 #about .card {
   background-color: #383631;
-  max-height: 130vh;
 }
 
 #about .card-text {
@@ -493,30 +491,25 @@ header {
     width: 40%;
   }
 
-  #home {
-    background-position: right;
-    background-size: contain;
-  }
-
-  .homeTxt {
-    width: 100%;
-    bottom: 16em;
-    background: unset;
-  }
-
   .homeTxt ul li {
     font-size: 5em;
     font-weight: 700;
   }
 
-  .btnContainer {
-    bottom: 11em;
-  }
-
   .projectsCon {
     width: 80%;
     margin: 0 auto;
-    height: 85vh;
+  }
+
+  #about .card {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    box-shadow: 7px 0px 15px 0px #3b3a3a;
+  }
+
+  #about .active {
+    background: none;
   }
 }
 
@@ -527,6 +520,25 @@ header {
     display: none;
   }
 
+  #home {
+    height: 100vh;
+    background-position: right;
+    background-size: 50%;
+  }
+
+  .homeTxt {
+    background: none;
+  }
+
+  .homeTxt ul li {
+    line-height: 1em;
+    font-size: 8em;
+  }
+
+  .homeBtn {
+    font-size: 1.5em;
+  }
+
   nav {
     visibility: unset;
     background: none;
@@ -534,6 +546,8 @@ header {
     height: auto;
     opacity: 1;
     transform: translateX(0);
+    float: left;
+    width: auto;
   }
 
   nav ul {
@@ -542,20 +556,49 @@ header {
     width: auto;
     float: right;
     margin: 0;
+    position: unset;
+    height: auto;
   }
 
   nav ul li a {
-    color: #2d7dff;
+    color: white;
     padding: 1em;
     display: block;
+    font-size: 1.3em;
+  }
+
+  nav ul li .active {
+    color: #2d7dff;
+    background: none;
   }
 
   nav ul li a:hover {
     background: none;
-    color: red;
+    color: rgba(238, 232, 232, 0.308);
   }
 
   .logo {
     margin-left: 0.8em;
+  }
+
+  #about .card {
+    width: 65%;
+  }
+
+  #about .nav-tabs {
+    width: 65%;
+    align-self: center;
+  }
+
+  #designs .react-multi-carousel-list {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #technologies {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
