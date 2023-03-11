@@ -1,4 +1,4 @@
-import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { BiCopyright } from 'react-icons/bi';
 
 export const Footer = () => {
@@ -10,11 +10,6 @@ export const Footer = () => {
         </a>
       </div>
       <div className="socialIcons">
-        <a href="https://www.instagram.com/vildanguenay/" alt="">
-          <i>
-            <BsInstagram />
-          </i>
-        </a>
         <a href="https://www.linkedin.com/in/vildan-guenay" alt="">
           <i>
             <BsLinkedin />

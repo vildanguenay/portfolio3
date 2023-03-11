@@ -13,19 +13,22 @@ export const Designs = () => {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 2,
+      partialVisibilityGutter: 0,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
+      partialVisibilityGutter: -4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 500 },
       items: 1,
+      partialVisibilityGutter: 0,
     },
     mobile: {
       breakpoint: { max: 500, min: 0 },
       items: 1,
-      // partialVisibilityGutter: -0.2,
+      partialVisibilityGutter: 0,
     },
   };
 

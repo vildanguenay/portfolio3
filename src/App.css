@@ -15,8 +15,10 @@ body {
 }
 
 :root {
-  --primary-color: #2f5ca6;
-  --secondary-color: green;
+  --primary-color: #ebd380;
+  --secondary-color: #c280eb;
+  --tertiary-color: #eb8093;
+  --quaternary-color: #8280eb;
 }
 
 section {
@@ -103,29 +105,32 @@ img {
 }
 
 .text1 {
-  color: #ebd380;
+  color: var(--primary-color);
 }
 
 .text2 {
-  color: #c280eb;
+  color: var(--secondary-color);
 }
 
 .text3 {
-  color: #eb8093;
+  color: var(--tertiary-color);
 }
 
 .text4 {
-  color: #8280eb;
+  color: var(--quaternary-color);
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
   position: fixed;
   width: 100%;
   z-index: 10000;
   align-items: center;
+  justify-content: end;
 }
 
 .scrolled {
@@ -351,10 +356,6 @@ header {
   border-radius: unset !important;
 }
 
-.nav-link.active {
-  background-color: green !important;
-}
-
 #designs {
   padding-bottom: 7em;
   padding-top: 8em;
@@ -477,6 +478,18 @@ header {
   color: white;
 }
 
+.soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9em;
+  height: 100vh;
+}
+
+.react-multiple-carousel__arrow {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
 @media only screen and (min-width: 500px) {
   section {
     padding: 0;
@@ -532,11 +545,16 @@ header {
 
   .homeTxt ul li {
     line-height: 1em;
-    font-size: 8em;
+    font-size: 9.8em;
   }
 
   .homeBtn {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+
+  header {
+    justify-content: flex-start;
+    line-height: 0.8em;
   }
 
   nav {
@@ -548,6 +566,10 @@ header {
     transform: translateX(0);
     float: left;
     width: auto;
+  }
+
+  .scrolled {
+    justify-content: space-evenly;
   }
 
   nav ul {
@@ -567,8 +589,8 @@ header {
     font-size: 1.3em;
   }
 
-  nav ul li .active {
-    color: #2d7dff;
+  .active {
+    color: var(--quaternary-color);
     background: none;
   }
 
@@ -577,23 +599,35 @@ header {
     color: rgba(238, 232, 232, 0.308);
   }
 
-  .logo {
-    margin-left: 0.8em;
+  .projectsCon {
+    width: 70%;
+  }
+
+  .projectsCon h1 {
+    margin-top: 0.5em;
+    font-size: 7em;
+  }
+
+  .carouselCaption h1 {
+    font-size: 4em;
   }
 
   #about .card {
-    width: 65%;
+    width: 40%;
   }
 
   #about .nav-tabs {
-    width: 65%;
+    width: 50%;
     align-self: center;
   }
 
+  #about .card-text {
+    font-size: large;
+  }
+
   #designs .react-multi-carousel-list {
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 40%;
+    margin: 3em auto;
   }
 
   #technologies {

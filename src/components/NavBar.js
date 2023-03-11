@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { VscArrowRight } from 'react-icons/vsc';
 import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
-
 export const NavBar = ({ setIsNavOpen, isNavOpen }) => {
   const [activeLink, setActiveLink] = useState('home');
 
@@ -64,6 +63,15 @@ export const NavBar = ({ setIsNavOpen, isNavOpen }) => {
             onClick={() => onUpdateActiveLink('technologies')}
           >
             Technologies
+          </a>
+        </li>
+        <li>
+          <a
+            href="/blog"
+            className={activeLink === 'blog' ? 'active initial' : 'initial'}
+            onClick={() => onUpdateActiveLink('blog')}
+          >
+            Blog
           </a>
         </li>
         <div className="socialsNav">

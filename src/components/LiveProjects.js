@@ -12,19 +12,22 @@ export const LiveProjects = () => {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
+      partialVisibilityGutter: 0,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
+      partialVisibilityGutter: 0,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
+      partialVisibilityGutter: 0,
     },
     mobile: {
       breakpoint: { max: 800, min: 0 },
       items: 1,
-      partialVisibilityGutter: 20,
+      partialVisibilityGutter: 0,
     },
   };
 
