@@ -11,7 +11,7 @@ root.render(
   <HashRouter>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}></Route>
+        <Route path="/portfolio3" element={<App />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
       </Routes>
     </BrowserRouter>
