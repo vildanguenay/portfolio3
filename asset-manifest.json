@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio3/static/css/main.9c2a8b97.css",
+    "main.js": "/portfolio3/static/js/main.ae172c5d.js",
+    "static/js/787.28d1ee6a.chunk.js": "/portfolio3/static/js/787.28d1ee6a.chunk.js",
+    "static/media/ScreenshotForest.png": "/portfolio3/static/media/ScreenshotForest.9243432fcd09e8d1e9d3.png",
+    "static/media/webshop.png": "/portfolio3/static/media/webshop.2ed3a1304761764a1cb8.png",
+    "static/media/waterfall.jpg": "/portfolio3/static/media/waterfall.3efd74ff643a06b43092.jpg",
+    "static/media/portfolio2.png": "/portfolio3/static/media/portfolio2.f192c416d8a171f3e88b.png",
+    "static/media/coast.png": "/portfolio3/static/media/coast.82e60aab4a2a2012ef90.png",
+    "static/media/netflix.png": "/portfolio3/static/media/netflix.0d0bcbde8051f78b4787.png",
+    "static/media/Tea.png": "/portfolio3/static/media/Tea.40dba41b15b51f8a343f.png",
+    "static/media/White Space & Image.png": "/portfolio3/static/media/White Space & Image.68919b00b2359b730ac3.png",
+    "static/media/gymblackwhite.jpg": "/portfolio3/static/media/gymblackwhite.07ffa0d44d68a145c664.jpg",
+    "static/media/website.png": "/portfolio3/static/media/website.f15415629406753467fd.png",
+    "static/media/peak.jpg": "/portfolio3/static/media/peak.147991361bb7f890ac3f.jpg",
+    "static/media/cfblur.jpg": "/portfolio3/static/media/cfblur.101b19ffc9f04e071125.jpg",
+    "static/media/White Space & Scale.png": "/portfolio3/static/media/White Space & Scale.af81675ca7bac248e1af.png",
+    "static/media/kontinentaldrift.jpg": "/portfolio3/static/media/kontinentaldrift.1725ff0fac067cb87636.jpg",
+    "static/media/White Space & Color.png": "/portfolio3/static/media/White Space & Color.8b334f2a486b64975940.png",
+    "static/media/revicons.eot": "/portfolio3/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portfolio3/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portfolio3/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/reactB.svg": "/portfolio3/static/media/reactB.958e7d840a62824b0702aa1b181b51d9.svg",
+    "static/media/sass.svg": "/portfolio3/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/css.svg": "/portfolio3/static/media/css.e3cea19868a05006688c7ad46b11ee1a.svg",
+    "static/media/html.svg": "/portfolio3/static/media/html.c6fcbf283d1e524e2350d039f25bc330.svg",
+    "static/media/slack.svg": "/portfolio3/static/media/slack.044efd1bb71a81557b7b948bc341a6c5.svg",
+    "static/media/cypress.svg": "/portfolio3/static/media/cypress.d197f82aadd00c149d0050037cb66478.svg",
+    "static/media/js.svg": "/portfolio3/static/media/js.e608bacf7270442f0e121acda1ef3db9.svg",
+    "index.html": "/portfolio3/index.html",
+    "static/media/figma.svg": "/portfolio3/static/media/figma.72ff35026c53ba574aef54c980db0e8d.svg",
+    "static/media/materialUI.svg": "/portfolio3/static/media/materialUI.fd510ed8518b192069590b04e2e6348a.svg",
+    "static/media/react.svg": "/portfolio3/static/media/react.2dd4991bbe13699baba3823a01a2a3c7.svg",
+    "main.9c2a8b97.css.map": "/portfolio3/static/css/main.9c2a8b97.css.map",
+    "main.ae172c5d.js.map": "/portfolio3/static/js/main.ae172c5d.js.map",
+    "787.28d1ee6a.chunk.js.map": "/portfolio3/static/js/787.28d1ee6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c2a8b97.css",
+    "static/js/main.ae172c5d.js"
+  ]
+}
